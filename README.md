@@ -5,7 +5,7 @@ In this paper, we propose Multi-level Contexts Weighted Coupling Transformer (WC
 WCTNet achieves state-of-the-art performance on two UHR datasets including DeepGlobe and Inria Aerial. Experimental results show that this contextual weighting and coupling of single-scale patches enables WCTNet to balance its accuracy and computational overhead well.
 
 ## Test and train
-Our code is based on [WCTNet](https://github.com/giganticpower/WCTNet)  
+Our code is Available in [WCTNet](https://github.com/giganticpower/WCTNet) and based on [Fctl](https://github.com/liqiokkk/FCtL) 
 python>=3.6 and pytorch>=1.2.0  
 Please install the dependencies: `pip install -r requirements.txt`
 ### dataset
@@ -23,6 +23,14 @@ data_1/
 ├── crossvali
 ├── offical_crossvali
 ```
+
+### data transfer
+We have provided several key scripts for data conversion
+You can use the three files in folder /data_1 to convert label formats, image labels to category labels, and partition datasets
+`python class_tranfer.py`  
+`python data_splip.py` 
+`python label_transfor.py` 
+
 ### test
 `bash test.sh`  
 ### train
